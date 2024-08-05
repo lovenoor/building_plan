@@ -1,0 +1,1806 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0916.1526                               -->
+<workbook original-version='18.1' source-build='2022.2.2 (20222.22.0916.1526)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AllowCalculationsForDensifiedMarks.true...AllowCalculationsForDensifiedMarks />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='ClassroomUtilizationMaster (ClassUtil.ClassroomUtilizationMaster) (IDA)' inline='true' name='federated.0jkw7zh12vrb81182rqf91gx5gli' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='opbdev.asa.uw.edu' name='sqlserver.033k8g60ms7t1s1f6vtpa1ocpq8t'>
+            <connection authentication='sspi' class='sqlserver' dbname='IDA' odbc-native-protocol='yes' one-time-sql='' server='opbdev.asa.uw.edu' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='sqlserver.033k8g60ms7t1s1f6vtpa1ocpq8t' name='ClassroomUtilizationForTableau' table='[ClassUtil].[ClassroomUtilizationForTableau]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='sqlserver.033k8g60ms7t1s1f6vtpa1ocpq8t' name='ClassroomUtilizationForTableau' table='[ClassUtil].[ClassroomUtilizationForTableau]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>AcademicQtrKeyId</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[AcademicQtrKeyId]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>AcademicQtrKeyId</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AcademicYrQtrDesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AcademicYrQtrDesc]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>AcademicYrQtrDesc</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CourseSectionCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CourseSectionCode]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>CourseSectionCode</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CourseSectionStudentCount</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[CourseSectionStudentCount]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>CourseSectionStudentCount</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CourseSectionSCH</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CourseSectionSCH]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>CourseSectionSCH</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>6</precision>
+            <scale>1</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CurriculumAbbrCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CurriculumAbbrCode]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>CurriculumAbbrCode</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>6</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CourseNbr</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[CourseNbr]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>CourseNbr</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CourseLevelGroupCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CourseLevelGroupCode]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>CourseLevelGroupCode</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>25</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CourseLevelCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CourseLevelCode]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>CourseLevelCode</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>25</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CourseSectionMeetingTypeDesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CourseSectionMeetingTypeDesc]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>CourseSectionMeetingTypeDesc</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>25</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CourseSectionMeetingBuildingAbbr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CourseSectionMeetingBuildingAbbr]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>CourseSectionMeetingBuildingAbbr</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CourseSectionMeetingRoomNbr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CourseSectionMeetingRoomNbr]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>CourseSectionMeetingRoomNbr</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Classroom</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Classroom]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>Classroom</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>21</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CourseSectionMeetingDaysOfWeek</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CourseSectionMeetingDaysOfWeek]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>CourseSectionMeetingDaysOfWeek</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>6</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_CHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Timeblock</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Timeblock]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>Timeblock</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>25</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CourseSectionMeetingStartTime</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[CourseSectionMeetingStartTime]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>CourseSectionMeetingStartTime</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIME&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIME&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CourseSectionMeetingEndTime</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[CourseSectionMeetingEndTime]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>CourseSectionMeetingEndTime</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIME&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIME&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SectionMeetingDayOfWeek</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SectionMeetingDayOfWeek]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>SectionMeetingDayOfWeek</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>9</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StandardTime</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[StandardTime]</local-name>
+            <parent-name>[ClassroomUtilizationForTableau]</parent-name>
+            <remote-alias>StandardTime</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIME&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIME&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Academic Qtr Key Id' datatype='integer' name='[AcademicQtrKeyId]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='20232' value='Spring 2023' />
+          <alias key='20233' value='Summer 2023' />
+          <alias key='20234' value='Autumn 2023' />
+          <alias key='20241' value='Winter 2024' />
+        </aliases>
+      </column>
+      <column aggregation='CountD' datatype='string' name='[AcademicYrQtrDesc]' role='dimension' type='nominal' />
+      <column caption='Course Level Code' datatype='string' name='[CourseLevelCode]' role='dimension' type='nominal' />
+      <column caption='Course Level Group Code' datatype='string' name='[CourseLevelGroupCode]' role='dimension' type='nominal' />
+      <column caption='Course Nbr' datatype='integer' name='[CourseNbr]' role='dimension' type='ordinal' />
+      <column caption='Course Section Code' datatype='string' name='[CourseSectionCode]' role='dimension' type='nominal' />
+      <column caption='Course Section Meeting Building Abbr' datatype='string' name='[CourseSectionMeetingBuildingAbbr]' role='dimension' type='nominal' />
+      <column caption='Course Section Meeting Days Of Week' datatype='string' name='[CourseSectionMeetingDaysOfWeek]' role='dimension' type='nominal' />
+      <column caption='Course Section Meeting End Time' datatype='datetime' name='[CourseSectionMeetingEndTime]' role='dimension' type='ordinal' />
+      <column caption='Course Section Meeting Room Nbr' datatype='string' name='[CourseSectionMeetingRoomNbr]' role='dimension' type='nominal' />
+      <column caption='Course Section Meeting Start Time' datatype='datetime' name='[CourseSectionMeetingStartTime]' role='dimension' type='ordinal' />
+      <column caption='Course Section Meeting Type Desc' datatype='string' name='[CourseSectionMeetingTypeDesc]' role='dimension' type='nominal' />
+      <column caption='Course Section SCH' datatype='real' name='[CourseSectionSCH]' role='measure' type='quantitative' />
+      <column caption='Course Section Student Count' datatype='integer' name='[CourseSectionStudentCount]' role='measure' type='quantitative' />
+      <column caption='Curriculum Abbr Code' datatype='string' name='[CurriculumAbbrCode]' role='dimension' type='nominal' />
+      <column caption='Section Meeting Day Of Week' datatype='string' name='[SectionMeetingDayOfWeek]' role='dimension' type='nominal' />
+      <column aggregation='Hour' datatype='datetime' name='[StandardTime]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='ClassroomUtilizationForTableau' datatype='table' name='[__tableau_internal_object_id__].[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]' role='measure' type='quantitative' />
+      <column-instance column='[AcademicYrQtrDesc]' derivation='None' name='[none:AcademicYrQtrDesc:nk]' pivot='key' type='nominal' />
+      <column-instance column='[SectionMeetingDayOfWeek]' derivation='None' name='[none:SectionMeetingDayOfWeek:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/laulck/repos/building_plan/tableau/ClassroomUtilizationMaster (ClassUtil.ClassroomUtilizationMaster) (IDA).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='05/08/2024 05:11:49 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='ClassroomUtilizationMaster (ClassUtil.ClassroomUtilizationMaster) (IDA)' increment-value='%null%' refresh-type='create' rows-inserted='2530397' timestamp-start='2024-05-08 17:11:37.620' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>AcademicQtrKeyId</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[AcademicQtrKeyId]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AcademicQtrKeyId</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AcademicYrQtrDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AcademicYrQtrDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AcademicYrQtrDesc</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CourseSectionCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CourseSectionCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CourseSectionCode</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>79462</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CourseSectionStudentCount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CourseSectionStudentCount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CourseSectionStudentCount</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>458</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CourseSectionSCH</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CourseSectionSCH]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CourseSectionSCH</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1059</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CurriculumAbbrCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CurriculumAbbrCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CurriculumAbbrCode</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>603</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CourseNbr</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CourseNbr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CourseNbr</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1019</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CourseLevelGroupCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CourseLevelGroupCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CourseLevelGroupCode</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CourseLevelCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CourseLevelCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CourseLevelCode</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CourseSectionMeetingTypeDesc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CourseSectionMeetingTypeDesc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CourseSectionMeetingTypeDesc</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CourseSectionMeetingBuildingAbbr</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CourseSectionMeetingBuildingAbbr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CourseSectionMeetingBuildingAbbr</remote-alias>
+              <ordinal>10</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CourseSectionMeetingRoomNbr</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CourseSectionMeetingRoomNbr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CourseSectionMeetingRoomNbr</remote-alias>
+              <ordinal>11</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>506</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Classroom</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Classroom]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Classroom</remote-alias>
+              <ordinal>12</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>856</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CourseSectionMeetingDaysOfWeek</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CourseSectionMeetingDaysOfWeek]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CourseSectionMeetingDaysOfWeek</remote-alias>
+              <ordinal>13</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Timeblock</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Timeblock]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Timeblock</remote-alias>
+              <ordinal>14</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>848</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CourseSectionMeetingStartTime</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[CourseSectionMeetingStartTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CourseSectionMeetingStartTime</remote-alias>
+              <ordinal>15</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CourseSectionMeetingEndTime</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[CourseSectionMeetingEndTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CourseSectionMeetingEndTime</remote-alias>
+              <ordinal>16</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SectionMeetingDayOfWeek</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SectionMeetingDayOfWeek]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SectionMeetingDayOfWeek</remote-alias>
+              <ordinal>17</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StandardTime</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[StandardTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StandardTime</remote-alias>
+              <ordinal>18</ordinal>
+              <family>ClassroomUtilizationForTableau</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>181</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:SectionMeetingDayOfWeek:nk]' type='palette'>
+            <map to='#1ba3c6'>
+              <bucket>&quot;Monday&quot;</bucket>
+            </map>
+            <map to='#57a337'>
+              <bucket>&quot;Tuesday&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Saturday&quot;</bucket>
+            </map>
+            <map to='#a26dc2'>
+              <bucket>&quot;Friday&quot;</bucket>
+            </map>
+            <map to='#e03426'>
+              <bucket>&quot;Thursday&quot;</bucket>
+            </map>
+            <map to='#f89217'>
+              <bucket>&quot;Wednesday&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:AcademicYrQtrDesc:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Spring 2023&quot;</bucket>
+            <bucket>&quot;Summer 2023&quot;</bucket>
+            <bucket>&quot;Autumn 2023&quot;</bucket>
+            <bucket>&quot;Winter 2024&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='AcademicQtrKeyId' />
+        <field-sort-custom-order field='CourseSectionCode' />
+        <field-sort-custom-order field='CourseSectionStudentCount' />
+        <field-sort-custom-order field='CourseSectionSCH' />
+        <field-sort-custom-order field='CurriculumAbbrCode' />
+        <field-sort-custom-order field='CourseNbr' />
+        <field-sort-custom-order field='CourseLevelGroupCode' />
+        <field-sort-custom-order field='CourseLevelCode' />
+        <field-sort-custom-order field='CourseSectionMeetingTypeDesc' />
+        <field-sort-custom-order field='CourseSectionMeetingBuildingAbbr' />
+        <field-sort-custom-order field='CourseSectionMeetingRoomNbr' />
+        <field-sort-custom-order field='Classroom' />
+        <field-sort-custom-order field='MondayMeetingInd' />
+        <field-sort-custom-order field='TuesdayMeetingInd' />
+        <field-sort-custom-order field='WednesdayMeetingInd' />
+        <field-sort-custom-order field='ThursdayMeetingInd' />
+        <field-sort-custom-order field='FridayMeetingInd' />
+        <field-sort-custom-order field='SaturdayMeetingInd' />
+        <field-sort-custom-order field='MeetingTimeSlot0600' />
+        <field-sort-custom-order field='Calculation_260645841980325888' />
+        <field-sort-custom-order field='Calculation_260645841995304976' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot0600 (copy)_260645841980981249' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot0700 (copy 6)_260645841983328263' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot0700 (copy 5)_260645841983320070' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot0700 (copy 4)_260645841983315973' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot0700 (copy 3)_260645841983307780' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot0700 (copy 2)_260645841983299587' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot0700 (copy)_260645841983295490' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot1300 (copy)_260645841983934472' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot1300 (copy) (copy 3)_260645841983959051' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot1300 (copy) (copy 2)_260645841983950858' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot1300 (copy) (copy)_260645841983942665' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot1700 (copy 2)_260645841984135182' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot1700 (copy)_260645841984118796' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot1700 (copy) (copy)_260645841984131085' />
+        <field-sort-custom-order field='StudentsMeetingTimeSlot1700 (copy) (copy) (copy)_260645841984217103' />
+        <field-sort-custom-order field='MeetingTimeSlot0700' />
+        <field-sort-custom-order field='MeetingTimeSlot0800' />
+        <field-sort-custom-order field='MeetingTimeSlot0900' />
+        <field-sort-custom-order field='MeetingTimeSlot1000' />
+        <field-sort-custom-order field='MeetingTimeSlot1100' />
+        <field-sort-custom-order field='MeetingTimeSlot1200' />
+        <field-sort-custom-order field='MeetingTimeSlot1300' />
+        <field-sort-custom-order field='MeetingTimeSlot1400' />
+        <field-sort-custom-order field='MeetingTimeSlot1500' />
+        <field-sort-custom-order field='MeetingTimeSlot1600' />
+        <field-sort-custom-order field='MeetingTimeSlot1700' />
+        <field-sort-custom-order field='MeetingTimeSlot1800' />
+        <field-sort-custom-order field='MeetingTimeSlot1900' />
+        <field-sort-custom-order field='MeetingTimeSlot2000' />
+        <field-sort-custom-order field='MeetingTimeSlot2100' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ClassroomUtilizationForTableau' id='ClassroomUtilizationForTableau (ClassUtil.ClassroomUtilizationForTableau)_766D82376D3D42AAB7585A27458C2C74'>
+            <properties context=''>
+              <relation connection='sqlserver.033k8g60ms7t1s1f6vtpa1ocpq8t' name='ClassroomUtilizationForTableau' table='[ClassUtil].[ClassroomUtilizationForTableau]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0jkw7zh12vrb81182rqf91gx5gli'>
+      <datasources>
+        <datasource caption='ClassroomUtilizationMaster (ClassUtil.ClassroomUtilizationMaster) (IDA)' name='federated.0jkw7zh12vrb81182rqf91gx5gli' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0jkw7zh12vrb81182rqf91gx5gli'>
+        <column caption='Academic Qtr Key Id' datatype='integer' name='[AcademicQtrKeyId]' role='dimension' type='ordinal'>
+          <aliases>
+            <alias key='20232' value='Spring 2023' />
+            <alias key='20233' value='Summer 2023' />
+            <alias key='20234' value='Autumn 2023' />
+            <alias key='20241' value='Winter 2024' />
+          </aliases>
+        </column>
+        <column datatype='string' name='[Classroom]' role='dimension' type='nominal' />
+        <column caption='Course Section Meeting Building Abbr' datatype='string' name='[CourseSectionMeetingBuildingAbbr]' role='dimension' type='nominal' />
+        <column-instance column='[AcademicQtrKeyId]' derivation='None' name='[none:AcademicQtrKeyId:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Classroom]' derivation='None' name='[none:Classroom:nk]' pivot='key' type='nominal' />
+        <column-instance column='[CourseSectionMeetingBuildingAbbr]' derivation='None' name='[none:CourseSectionMeetingBuildingAbbr:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:AcademicQtrKeyId:ok]'>
+        <groupfilter function='member' level='[none:AcademicQtrKeyId:ok]' member='20241' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:Classroom:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Classroom:nk]' member='&quot;ACC_012&quot;' />
+          <groupfilter function='member' level='[none:Classroom:nk]' member='&quot;ART_110&quot;' />
+          <groupfilter function='member' level='[none:Classroom:nk]' member='&quot;BAG_131&quot;' />
+          <groupfilter function='member' level='[none:Classroom:nk]' member='&quot;BIOE_N133&quot;' />
+          <groupfilter function='member' level='[none:Classroom:nk]' member='&quot;GNOM_S060&quot;' />
+          <groupfilter function='member' level='[none:Classroom:nk]' member='&quot;KNE_130&quot;' />
+          <groupfilter function='member' level='[none:Classroom:nk]' member='&quot;PCAR_295&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:CourseSectionMeetingBuildingAbbr:nk]'>
+        <groupfilter function='member' level='[none:CourseSectionMeetingBuildingAbbr:nk]' member='&quot;KNE&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='ByDay'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ClassroomUtilizationMaster (ClassUtil.ClassroomUtilizationMaster) (IDA)' name='federated.0jkw7zh12vrb81182rqf91gx5gli' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jkw7zh12vrb81182rqf91gx5gli'>
+            <column caption='Academic Qtr Key Id' datatype='integer' name='[AcademicQtrKeyId]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='20232' value='Spring 2023' />
+                <alias key='20233' value='Summer 2023' />
+                <alias key='20234' value='Autumn 2023' />
+                <alias key='20241' value='Winter 2024' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Classroom]' role='dimension' type='nominal' />
+            <column caption='Course Section Code' datatype='string' name='[CourseSectionCode]' role='dimension' type='nominal' />
+            <column caption='Course Section Meeting Building Abbr' datatype='string' name='[CourseSectionMeetingBuildingAbbr]' role='dimension' type='nominal' />
+            <column caption='Course Section Meeting End Time' datatype='datetime' name='[CourseSectionMeetingEndTime]' role='dimension' type='ordinal' />
+            <column caption='Course Section Meeting Start Time' datatype='datetime' name='[CourseSectionMeetingStartTime]' role='dimension' type='ordinal' />
+            <column caption='Course Section Student Count' datatype='integer' name='[CourseSectionStudentCount]' role='measure' type='quantitative' />
+            <column caption='Section Meeting Day Of Week' datatype='string' name='[SectionMeetingDayOfWeek]' role='dimension' type='nominal' />
+            <column aggregation='Hour' datatype='datetime' name='[StandardTime]' role='dimension' type='ordinal' />
+            <column-instance column='[AcademicQtrKeyId]' derivation='None' name='[none:AcademicQtrKeyId:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Classroom]' derivation='None' name='[none:Classroom:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CourseSectionCode]' derivation='None' name='[none:CourseSectionCode:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CourseSectionMeetingBuildingAbbr]' derivation='None' name='[none:CourseSectionMeetingBuildingAbbr:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SectionMeetingDayOfWeek]' derivation='None' name='[none:SectionMeetingDayOfWeek:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CourseSectionStudentCount]' derivation='Sum' name='[sum:CourseSectionStudentCount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CourseSectionMeetingEndTime]' derivation='Minute-Trunc' name='[tmi:CourseSectionMeetingEndTime:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CourseSectionMeetingStartTime]' derivation='Minute-Trunc' name='[tmi:CourseSectionMeetingStartTime:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[StandardTime]' derivation='Minute-Trunc' name='[tmi:StandardTime:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:CourseSectionMeetingBuildingAbbr:nk]</column>
+            <column>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:Classroom:nk]</column>
+            <column>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:AcademicQtrKeyId:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:StandardTime:qk]' scope='cols' value='Time' />
+            <format attr='title' class='0' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[sum:CourseSectionStudentCount:qk]' scope='rows' value='' />
+            <format attr='width' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[sum:CourseSectionStudentCount:qk]' value='40' />
+            <encoding attr='space' class='0' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[sum:CourseSectionStudentCount:qk]' field-type='quantitative' range-type='uniform' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:CourseSectionMeetingStartTime:qk]' value='*Hh:nn' />
+            <format attr='text-format' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:CourseSectionMeetingEndTime:qk]' value='*Hh:nn' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:SectionMeetingDayOfWeek:nk]' value='76' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:StandardTime:qk]' value='*HH:mm' />
+            <format attr='font-size' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[sum:CourseSectionStudentCount:qk]' value='8' />
+            <format attr='text-orientation' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:SectionMeetingDayOfWeek:nk]' value='0' />
+            <format attr='text-format' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:CourseSectionMeetingStartTime:qk]' value='*Hh:nn' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[sum:CourseSectionStudentCount:qk]' min='0' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:CourseSectionMeetingBuildingAbbr:nk]' value='Building' />
+            <format attr='title' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:AcademicQtrKeyId:ok]' value='Academic Term' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:SectionMeetingDayOfWeek:nk]' />
+              <lod column='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:CourseSectionCode:nk]' />
+              <lod column='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:Classroom:nk]' />
+              <lod column='[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:CourseSectionMeetingStartTime:qk]' />
+              <lod column='[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:CourseSectionMeetingEndTime:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Day:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:SectionMeetingDayOfWeek:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Time:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:StandardTime:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Classroom:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:Classroom:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Course Section:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:CourseSectionCode:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Section Time:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:CourseSectionMeetingStartTime:qk]> - ]]></run>
+                <run bold='true'><![CDATA[<[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:CourseSectionMeetingEndTime:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Number of Students:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0jkw7zh12vrb81182rqf91gx5gli].[sum:CourseSectionStudentCount:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>([federated.0jkw7zh12vrb81182rqf91gx5gli].[none:SectionMeetingDayOfWeek:nk] * [federated.0jkw7zh12vrb81182rqf91gx5gli].[sum:CourseSectionStudentCount:qk])</rows>
+        <cols>[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:StandardTime:qk]</cols>
+      </table>
+      <simple-id uuid='{7025A3C4-0F22-4372-95FC-159A419583E4}' />
+    </worksheet>
+    <worksheet name='HeatMap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ClassroomUtilizationMaster (ClassUtil.ClassroomUtilizationMaster) (IDA)' name='federated.0jkw7zh12vrb81182rqf91gx5gli' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jkw7zh12vrb81182rqf91gx5gli'>
+            <column caption='Academic Qtr Key Id' datatype='integer' name='[AcademicQtrKeyId]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='20232' value='Spring 2023' />
+                <alias key='20233' value='Summer 2023' />
+                <alias key='20234' value='Autumn 2023' />
+                <alias key='20241' value='Winter 2024' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Classroom]' role='dimension' type='nominal' />
+            <column caption='Course Section Meeting Building Abbr' datatype='string' name='[CourseSectionMeetingBuildingAbbr]' role='dimension' type='nominal' />
+            <column caption='Course Section Student Count' datatype='integer' name='[CourseSectionStudentCount]' role='measure' type='quantitative' />
+            <column caption='Section Meeting Day Of Week' datatype='string' name='[SectionMeetingDayOfWeek]' role='dimension' type='nominal' />
+            <column aggregation='Hour' datatype='datetime' name='[StandardTime]' role='dimension' type='ordinal' />
+            <column-instance column='[AcademicQtrKeyId]' derivation='None' name='[none:AcademicQtrKeyId:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Classroom]' derivation='None' name='[none:Classroom:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CourseSectionMeetingBuildingAbbr]' derivation='None' name='[none:CourseSectionMeetingBuildingAbbr:nk]' pivot='key' type='nominal' />
+            <column-instance column='[SectionMeetingDayOfWeek]' derivation='None' name='[none:SectionMeetingDayOfWeek:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CourseSectionStudentCount]' derivation='Sum' name='[sum:CourseSectionStudentCount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[StandardTime]' derivation='Minute-Trunc' name='[tmi:StandardTime:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:AcademicQtrKeyId:ok]</column>
+            <column>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:CourseSectionMeetingBuildingAbbr:nk]</column>
+            <column>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:Classroom:nk]</column>
+          </slices>
+          <aggregation value='true' />
+          <_.fcp.AllowCalculationsForDensifiedMarks.true...calcs-on-densified-marks value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:StandardTime:qk]' field-type='quantitative' max='#1900-01-01 21:00:00#' min='#1900-01-01 06:00:00#' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:StandardTime:qk]' scope='cols' value='Time' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:SectionMeetingDayOfWeek:nk]' value='28' />
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:SectionMeetingDayOfWeek:nk]' value='180' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:StandardTime:qk]' value='*HH:mm' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0jkw7zh12vrb81182rqf91gx5gli].[sum:CourseSectionStudentCount:qk]' min='0' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#dcd7e6</color>
+                <color>#c8bedb</color>
+                <color>#b5a7d0</color>
+                <color>#a391c5</color>
+                <color>#927dba</color>
+                <color>#826aaf</color>
+                <color>#7259a4</color>
+                <color>#644999</color>
+                <color>#573b8e</color>
+                <color>#4b2e83</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0jkw7zh12vrb81182rqf91gx5gli].[sum:CourseSectionStudentCount:qk]' />
+              <lod column='[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:StandardTime:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Day:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:SectionMeetingDayOfWeek:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Time:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:StandardTime:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Number of Students:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0jkw7zh12vrb81182rqf91gx5gli].[sum:CourseSectionStudentCount:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:SectionMeetingDayOfWeek:nk]</rows>
+        <cols>[federated.0jkw7zh12vrb81182rqf91gx5gli].[tmi:StandardTime:qk]</cols>
+      </table>
+      <simple-id uuid='{8134B445-7BAE-4D9C-A9FD-70C6D56AD720}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='ClassroomUtilizationMaster (ClassUtil.ClassroomUtilizationMaster) (IDA)' name='federated.0jkw7zh12vrb81182rqf91gx5gli' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0jkw7zh12vrb81182rqf91gx5gli'>
+        <column caption='Academic Qtr Key Id' datatype='integer' name='[AcademicQtrKeyId]' role='dimension' type='ordinal'>
+          <aliases>
+            <alias key='20232' value='Spring 2023' />
+            <alias key='20233' value='Summer 2023' />
+            <alias key='20234' value='Autumn 2023' />
+            <alias key='20241' value='Winter 2024' />
+          </aliases>
+        </column>
+        <column datatype='string' name='[Classroom]' role='dimension' type='nominal' />
+        <column caption='Course Section Meeting Building Abbr' datatype='string' name='[CourseSectionMeetingBuildingAbbr]' role='dimension' type='nominal' />
+        <column-instance column='[AcademicQtrKeyId]' derivation='None' name='[none:AcademicQtrKeyId:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Classroom]' derivation='None' name='[none:Classroom:nk]' pivot='key' type='nominal' />
+        <column-instance column='[CourseSectionMeetingBuildingAbbr]' derivation='None' name='[none:CourseSectionMeetingBuildingAbbr:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='64' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='97916' id='9' type-v2='layout-basic' w='98828' x='586' y='1042'>
+              <zone h='97916' id='21' is-fixed='true' type-v2='layout-basic' w='15967' x='586' y='1042'>
+                <zone h='97916' id='3' param='vert' type-v2='layout-flow' w='15967' x='586' y='1042'>
+                  <zone fixed-size='110' forceUpdate='true' h='15365' id='6' is-fixed='true' type-v2='text' w='15967' x='586' y='1042'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#555555' fontsize='18'>Classroom Utilization</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='6771' id='74' mode='checkdropdown' name='ByDay' param='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:AcademicQtrKeyId:ok]' show-apply='true' type-v2='filter' values='database' w='15967' x='586' y='16407'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='6771' id='66' mode='checkdropdown' name='ByDay' param='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:CourseSectionMeetingBuildingAbbr:nk]' show-apply='true' type-v2='filter' values='all' w='15967' x='586' y='23178'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='6771' id='65' mode='checkdropdown' name='ByDay' param='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:Classroom:nk]' show-apply='true' type-v2='filter' values='relevant' w='15967' x='586' y='29949'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='97916' id='71' is-fixed='true' type-v2='layout-basic' w='82861' x='16553' y='1042'>
+                <zone h='97916' id='5' param='vert' type-v2='layout-flow' w='82861' x='16553' y='1042'>
+                  <zone forceUpdate='true' h='4818' id='23' type-v2='text' w='82861' x='16553' y='1042'>
+                    <formatted-text>
+                      <run fontalignment='1' fontsize='16'>Number of Students by Time of Day</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='24' h='4167' id='73' is-fixed='true' type-v2='empty' w='82861' x='16553' y='5860'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='58332' id='87' param='horz' type-v2='layout-flow' w='82861' x='16553' y='10027'>
+                    <zone fixed-size='24' h='58332' id='88' is-fixed='true' type-v2='empty' w='2343' x='16553' y='10027'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='58332' id='62' name='ByDay' show-title='false' w='80518' x='18896' y='10027'>
+                      <layout-cache minheight='556' minwidth='217' type-h='scalable' type-w='scalable' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone fixed-size='24' h='4167' id='70' is-fixed='true' type-v2='empty' w='82861' x='16553' y='68359'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='26432' id='75' param='horz' type-v2='layout-flow' w='82861' x='16553' y='72526'>
+                    <zone h='26432' id='72' name='HeatMap' show-title='false' w='79420' x='16553' y='72526'>
+                      <layout-cache fixed-size-h='195' minwidth='280' type-h='fixed' type-w='scalable' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='39' h='26432' id='76' is-fixed='true' type-v2='empty' w='3441' x='95973' y='72526'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='122' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='121' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone fixed-size='110' forceUpdate='true' h='15365' id='6' type-v2='text' w='15967' x='586' y='1042'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#555555' fontsize='18'>Classroom Utilization</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4818' id='23' type-v2='text' w='82861' x='16553' y='1042'>
+                  <formatted-text>
+                    <run fontalignment='1' fontsize='16'>Number of Students by Time of Day</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6771' id='74' mode='checkdropdown' name='ByDay' param='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:AcademicQtrKeyId:ok]' show-apply='true' type-v2='filter' values='database' w='15967' x='586' y='16407'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6771' id='66' mode='checkdropdown' name='ByDay' param='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:CourseSectionMeetingBuildingAbbr:nk]' show-apply='true' type-v2='filter' values='all' w='15967' x='586' y='23178'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6771' id='65' mode='checkdropdown' name='ByDay' param='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:Classroom:nk]' show-apply='true' type-v2='filter' values='relevant' w='15967' x='586' y='29949'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='58332' id='62' is-fixed='true' name='ByDay' show-title='false' w='80518' x='18896' y='10027'>
+                  <layout-cache minheight='556' minwidth='217' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='195' h='26432' id='72' is-fixed='true' name='HeatMap' show-title='false' w='79420' x='16553' y='72526'>
+                  <layout-cache fixed-size-h='195' minwidth='280' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F0A0AD9E-EF45-43C0-ABD2-6811B526FEA6}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='ByDay'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='HeatMap' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{121ACC09-9F09-4FFD-BA20-932DEB4FC738}' />
+    </window>
+    <window class='worksheet' name='HeatMap'>
+      <cards>
+        <edge name='left'>
+          <strip size='287'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:Classroom:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:CourseSectionMeetingBuildingAbbr:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0jkw7zh12vrb81182rqf91gx5gli].[sum:CourseSectionStudentCount:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[hr:CourseSectionMeetingStartTime:ok]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[hr:StandardTime:ok]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:AcademicQtrKeyId:ok]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:AcademicYrQtrDesc:nk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:Classroom:nk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:CourseSectionMeetingBuildingAbbr:nk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:SectionMeetingDayOfWeek:nk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[sum:CourseSectionStudentCount:qk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[thr:RoundedEndTimeFakeDate:ok]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[tyr:RoundedEndTimeFakeDate:qk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[tyr:RoundedStartTimeFakeDate:qk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[yr:CourseSectionMeetingEndTime:ok]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[yr:RoundedStartTimeFakeDate:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{57ED555C-A0E7-46B5-9EAE-B462E3828E7C}' />
+    </window>
+    <window class='worksheet' name='ByDay'>
+      <cards>
+        <edge name='left'>
+          <strip size='287'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:Classroom:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:CourseSectionMeetingBuildingAbbr:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:SectionMeetingDayOfWeek:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[hr:CourseSectionMeetingEndTime:ok]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[hr:CourseSectionMeetingStartTime:ok]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[hr:StandardTime:ok]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[mi:CourseSectionMeetingStartTime:ok]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:AcademicQtrKeyId:ok]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:AcademicYrQtrDesc:nk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:Classroom:nk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:CourseSectionCode:nk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:CourseSectionMeetingBuildingAbbr:nk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[none:SectionMeetingDayOfWeek:nk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[thr:RoundedEndTimeFakeDate:ok]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[tyr:RoundedEndTimeFakeDate:qk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[tyr:RoundedStartTimeFakeDate:qk]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[yr:CourseSectionMeetingEndTime:ok]</field>
+            <field>[federated.0jkw7zh12vrb81182rqf91gx5gli].[yr:RoundedStartTimeFakeDate:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1B47F94F-A7BA-47E8-A22D-82D12F646655}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='ByDay' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='HeatMap' width='192'>
+      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
+      fE0CIHzt/wGPcdhuRoKqBAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
